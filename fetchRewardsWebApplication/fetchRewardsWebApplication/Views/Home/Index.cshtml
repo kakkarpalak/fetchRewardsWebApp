@@ -1,0 +1,29 @@
+﻿@model IEnumerable<fetchRewardsWebApplication.Models.Item>
+
+<br/><br /><br />
+
+<table class="table" border="1" cellpadding="2">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            List ID
+        </th>
+        <th>
+            Name
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.listId</td>
+                <td>Item @item.nameId</td>
+            </tr>
+        }
+    }
+
+</table>
